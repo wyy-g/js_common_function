@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .todolist-container {
+            margin: 20px;
+        }
+
+        .todolist-input {
+            outline: none;
+            border: 1px solid #ccc;
+            height: 25px;
+        }
+
+        .todolist-add {
+            border: 0;
+            background-color: skyblue;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .todolist {
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        .todolist-item {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 0 10px;
+        }
+
+
+        .delete {
+            outline: none;
+            border: none;
+            color: #fff;
+            padding: 2px 10px;
+            background-color: darkred;
+            margin-left: 10px;
+            cursor: pointer;
+            user-select: none;
+            /* margin-left: 80px; */
+        }
+
+        .noSelected {
+            pointer-events: none;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todolist-container">
+        <div class="todolist-wrap">
+            <input type="text" class="todolist-input" autofocus>
+            <button class="todolist-add">添加代办事项</button>
+        </div>
+        <div class="todolist">
+            <ul class="ul">
+                <!-- <li class="todolist-item">
+                    <input type="checkbox">
+                    <span class="todolist-content">xxxxx</span>
+                    <button class="delete noSelected">删除</button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
