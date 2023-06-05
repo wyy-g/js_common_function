@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    /* width: 1500px; */
+    margin: 40px auto;
+}
+
+#small {
+    width: 309px;
+    height:550px;
+    margin-left: 50px;
+    float: left;
+    position: relative;
+}
+#smallimg {
+    width: 100%;
+    height: 100%;
+}
+
+#big {
+    width: 600px;
+    height:600px;
+    float: left;
+    /* 超出取景框的部分隐藏 */
+    overflow: hidden;
+    margin-left: 20px;
+    position: relative;
+    display: none;
+}
+
+#bigimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mark {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* 鼠标箭头样式 */
+    cursor: move;
+    display: none;
+}

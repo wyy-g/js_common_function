@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    /* position: relative;
+    box-sizing: border-box; */
+    padding: 50px;
+}
+
+
+.small {
+    position: relative;
+    width: 508px;
+    height: 300px;
+}
+.img {
+    position: relative;
+}
+
+.mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 10px #ccc;
+    border-radius: 50%;
+    cursor: move;
+    display: none;
+    /* filter: blur(1px); */
+}
+
+
+
