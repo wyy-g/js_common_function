@@ -32,3 +32,17 @@
 </body>
 
 </html>
+<!--
+	 draggable=true元素可进行拖拽 
+	拖拽事件分为两种 
+	被拖拽事件
+	1、ondragstart  被拖拽开始事件
+	2、ondrag  拖拽进行中事件
+	3、ondragend 被拖拽元素结束事件
+	目标元素事件
+	1、ondragenter 被拖拽元素进入目标元素事件（基于鼠标位置看是否进入目标元素范围）
+	2、ondragover 被拖拽元素在目标元素上移动
+	3、ondragleave 被拖拽元素离开目标元素事件
+	4、ondrop 被拖拽元素在目标元素上释放事件 触发该事件的前提是需要先在dragover中阻止事件的默认行为不然不会触发
+	拖拽事件需要阻止浏览器的默认行为 e.preventDefault()
+	-->
