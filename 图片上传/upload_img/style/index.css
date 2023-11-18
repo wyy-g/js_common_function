@@ -1,0 +1,84 @@
+@import url('./imgList.css');
+@import url('./uploadImg.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.upload-img {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.img-list {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-img.active, .img-list.active {
+    color: #fff;
+    background-color: skyblue;
+}
+
+.upload-img:hover, .img-list:hover {
+    color: #fff;
+    background-color: skyblue;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.message {
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 40px;
+}
+.message.error {
+    background-color: pink;
+}
+
+
+.message.success {
+    background-color: greenyellow;
+}
+
+
+
+

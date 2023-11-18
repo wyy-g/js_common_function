@@ -1,0 +1,74 @@
+.main {
+    margin-top: 100px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .file-img {
+    display: none;
+}
+
+.main .selectBox{
+    width: 650px;
+    height: 260px;
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.main .selectBox:hover {
+    color: skyblue;
+    border: 2px dashed skyblue;
+    cursor: pointer;
+}
+
+.main .selectBox.active {
+    color: skyblue;
+    border: 2px dashed skyblue;
+}
+
+
+.photoBox {
+    height: 90%;
+    position: relative;
+}
+.photo {
+    height: 100%;
+   
+}
+/* .photo:hover {
+    cursor: pointer;
+} */
+
+.delOrlargeImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    display: none;
+}
+
+.largeImg {
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.del {
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
